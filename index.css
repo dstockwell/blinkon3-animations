@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+body {
+  font-family: "Noto Sans";
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  overflow: hidden;
+  margin: 0;
+  transform: none;
+  transform-origin: 0 50%;
+  will-change: transform;
+  font-size: 3vw;
+}
+
+.current blink {
+  -webkit-animation: 1s blink infinite step-end; 
+}
+
+@-webkit-keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+body > * {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+}
+
+body > *.current > top-title {
+  -webkit-animation: 1000ms fadein;
+}
+
+@-webkit-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+*[pre] {
+  white-space: pre;
+}
+
+body > * > * {
+  padding-left: 2vw;  
+  padding-right: 2vw;  
+}
+
+top-title {
+  font-size: 2em;
+  background: #2196F3;
+  color: white;
+  font-weight: 700;
+}
+
+sub-title {
+  color: #2196F3;
+}
+
+center-title {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+center-list {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+}
+
+
+slide.current {
+}
+
+img {
+  align-self: center;
+}
+
+table {
+  width: 100%;
+}
+
+slide.current {
+  transform: translate(0px);
+}
+a:visited, a {
+  color: green;
+}

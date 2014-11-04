@@ -1,0 +1,181 @@
+<link rel="stylesheet" href="index.css">
+<script src="index.js"></script>
+
+<body>
+
+<top-title>Blink Animations</top-title>
+
+<slide>
+<top-title>Blink Animations?</top-title>
+<center-title><blink>&lt;blink&gt;</blink></center-title>
+</slide>
+
+<slide>
+<center-title>Shipping Recap</center-title>
+</slide>
+
+<slide>
+<top-title>M33</top-title>
+<center-title pre>CSS Animations
+and Transitions</center-title>
+</slide>
+
+<slide>
+<top-title>M36</top-title>
+<center-title pre>Web Animations:
+element.animate</center-title>
+</slide>
+
+<slide>
+<top-title>M39</top-title>
+<center-title pre>Web Animations:
+Playback Control</center-title>
+</slide>
+
+<slide>
+<top-title>M42</top-title>
+<center-title>?</center-title>
+</slide>
+
+<slide>
+<center-title>Implementation Status</center-title>
+</slide>
+
+<slide>
+<top-title>Web Animations API</top-title>
+<center-title>Phase 1 almost complete</center-title>
+</slide>
+
+<slide>
+<top-title>Web Animations API</top-title>
+<center-title pre>Groups, Sequences and additive
+animation should ship in 2015</center-title>
+</slide>
+
+<slide>
+<top-title>Web Animations API</top-title>
+<center-title pre>Animation of SVG attributes
+should ship in Q1</center-title>
+</slide>
+
+<slide>
+<top-title>CSS Animations</top-title>
+<center-list pre>Still prefixed: -webkit-&#x1f622;
+<li>A number of <a href="https://code.google.com/p/chromium/issues/detail?id=154771">blocking issues</a></li><li>Spec still being <a href="http://dev.w3.org/csswg/css-animations/#wg-resolutions-pending">edited</a></li></center-list>
+</slide>
+
+<slide>
+<top-title>CSS Transitions</top-title>
+<center-list pre>Basically done,
+but numerous footguns.
+</center-list>
+</slide>
+
+<slide>
+<top-title>CSS Transitions &#x1f648;</top-title>
+<center-list>
+<pre>transition: 1s;</pre>
+</center-list>
+</slide>
+
+<slide>
+<top-title>CSS Transitions &#x1f649;</top-title>
+<center-list>
+<pre>transition: height 500ms;
+
+...
+
+element.style.height = 0;
+element.style.height = 'auto';
+</pre>
+</center-list>
+</slide>
+
+<slide>
+<top-title>CSS Transitions &#x1f64a;</top-title>
+<center-list>
+<pre>element.style.height = 0;
+element.offsetHeight;
+element.style.height = 'auto';
+</pre>
+</center-list>
+</slide>
+
+<slide>
+<top-title>CSS Transitions &#x1f628;</top-title>
+<center-list>
+<pre>element.style.height = 'auto';
+var height = element.offsetHeight;
+element.style.height = 0;
+element.offsetHeight;
+element.style.height = height + 'px';
+</pre>
+</center-list>
+</slide>
+
+<slide>
+<top-title>SVG+SMIL</top-title>
+<center-title><img srcset="smil.png 2x"></center-title>
+</slide>
+
+<slide>
+<top-title>Blink in JS</top-title>
+<center-list pre><marquee>&lt;marquee&gt; in M40</marquee>
+
+Perhaps, &lt;progress&gt; should be next?
+<progress></progress>
+</center-list>
+</slide>
+
+<slide>
+<top-title>chrome://tracing</top-title>
+<center-title><img srcset="tracing.png 2x"></center-title>
+</slide>
+
+<slide>
+<top-title>Compositor</top-title>
+<center-list>
+More capabilities:<br>
+<li>fractional iterations</li>
+<li>playback rate</li><br>
+Eagerly awaiting the repo merge.<br>
+Excited about slimming paint.
+</center-list>
+</slide>
+
+<slide>
+<center-title>New Things</center-title>
+</slide>
+
+<slide>
+<top-title>Motion Path</top-title>
+<center-title><img src="motion-path.svg"></center-title>
+</slide>
+
+<slide>
+<top-title>Natural Animation</top-title>
+</slide>
+
+<slide>
+<top-title>Idiomatic Animation</top-title>
+<center-list>
+Choreographing an animation is hard enough,
+but having to decompose into transforms can
+be unbearable.
+</center-list>
+</slide>
+
+<slide>
+<top-title>Idiomatic Animation</top-title>
+<center-list>
+Authors can already animate width,
+height, etc. but they avoid them
+because... performance:<br>
+<li>recalc</li>
+<li>layout</li>
+<li>paint</li>
+<li>impl side</li>
+</center-list>
+</slide>
+
+<top-title>&nbsp;</top-title>
